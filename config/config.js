@@ -49,9 +49,9 @@ var config = {
 			position: "top_right",
 			config: {
 				calendars: [
-					//{
-						//url: this.GOOGLE_CALENDAR_URL
-					//},
+					{
+						url: this.GOOGLE_CALENDAR_URL
+					},
 					{
 						url: this.GOOGLE_CALENDAR_2_URL
 					}
@@ -60,7 +60,7 @@ var config = {
 		},
 		{
 			module: "compliments",
-			position: "lower_third"
+			position: "top_left"
 		},
 		{
 			module: "weatherforecast",
@@ -75,7 +75,7 @@ var config = {
 		},
 		{
 			module: "newsfeed",
-			position: "bottom_bar",
+			position: "bottom_left",
 			config: {
 				feeds: [
 					{
