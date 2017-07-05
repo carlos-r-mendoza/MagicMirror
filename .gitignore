@@ -69,3 +69,7 @@ Temporary Items
 *.orig
 *.rej
 *.bak
+
+# ENV
+env.js
+
