@@ -86,7 +86,17 @@ var config = {
 				showSourceTitle: true,
 				showPublishDate: true
 			}
-		}
+		},
+		{
+	module: 'MMM-Globe',
+	position: 'top_left',
+	config: {
+		style: 'centralAmericaDiscNat',
+		imageSize: 100,
+		ownImagePath:'',
+		updateInterval: 10*60*1000
+	}
+},
 	]
 
 };
