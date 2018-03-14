@@ -88,15 +88,31 @@ var config = {
 			}
 		},
 		{
-	module: 'MMM-Globe',
-	position: 'top_left',
-	config: {
-		style: 'centralAmericaDiscNat',
-		imageSize: 100,
-		ownImagePath:'',
-		updateInterval: 10*60*1000
-	}
-},
+			
+			module: 'MMM-Scrobbler',
+			
+			position: 'top_right',
+			config: {
+		
+				username: this.LASTFM_USERNAME,
+			
+				apikey: this.LASTFM_APIKEY,
+			
+				//time interval to search for new song (every 15 seconds)
+				updateInterval: 15 * 1000,
+				//how often should we try to retrieve a song if not listening
+				delayCount: 5,
+				//time interval to search for new song if the 5 times not listening is received.
+				//set this to the same number as updateInterval to ignore this option	
+				delayInterval: 120*1000,
+				animationSpeed: 1000,
+				showAlbumArt: true,
+						showMetaData: true,
+				//Determines the position of the meta text. Possible values: top, bottom, left, right
+				alignment: "bottom", 
+				}
+			
+		}
 	]
 
 };
